@@ -1,0 +1,202 @@
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar .active-link {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-company {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-gmail {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Main Layout */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+/* Portfolio Content */
+.portfolio-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Search & Column Filter Section */
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Search Input (Aligned to Left) */
+.search-input {
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Dropdown Wrapper */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Initially Hidden) */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: 200px;
+  z-index: 1000;
+  padding: 8px;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Show dropdown when active */
+.dropdown.active .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+
+/* Filter Button */
+.filter-button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+/* Add Loan Button */
+.add-loan-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Table */
+.table-container {
+  margin-top: 15px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loan-table th,
+.loan-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.loan-table th {
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+.loan-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Highlight Borrower Address */
+.loan-table .highlight {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Category Bar */
+.category-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.category-button {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-button.active {
+  background-color: #2563eb;
+  color: white;
+}
